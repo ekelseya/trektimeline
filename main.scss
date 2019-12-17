@@ -1,5 +1,31 @@
 @import url("https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans+Condensed:300");
 
+/*$primary: #3F51B5;
+$dark-primary: #303F9F;
+$light-primary: #C5CAE9;
+$text: #FFFFFF;
+$primary-text: #212121;
+$secondary-text: #757575;
+$accent: #FF4081;*/
+
+header {
+  background-color: #3F51B5;
+  color: #FFFFFF;
+  font-family: Open Sans Condensed, sans-serif;
+  font-size: 24px;
+  padding: 150px 0;
+  text-align: center;
+
+  p {
+    font-family: Open Sans Condensed, sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    font-size: 15px;
+    margin-top: -30px;
+    text-align: center;
+  }
+}
+
 .wrapper {
   background-color: #42A5F5;
   width: 100%;

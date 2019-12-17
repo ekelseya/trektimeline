@@ -1,16 +1,16 @@
-let $element = $(".each-event, .title");
-let $window = $(window);
+var $element = $(".each-event, .title");
+var $window = $(window);
 $window.on("scroll resize", check_for_fade);
 $window.trigger("scroll");
 
 function check_for_fade() {
-    let window_height = $window.height();
+    var window_height = $window.height();
 
     $.each($element, function (event) {
-        let $element = $(this);
-        let element_height = $element.outerHeight;
-        let element_offset = $element.offsetTop;
-        let space = window_height - (element_height + element_offset - $(window.scrollTop));
+        var $element = $(this);
+        var element_height = $element.outerHeight;
+        var element_offset = $element.offsetTop;
+        space = window_height - (element_height + element_offset - $(window.scrollTop));
         if (space < 60) {
             $element.addClass("non-focus");
         } else {
